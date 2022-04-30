@@ -1,4 +1,8 @@
 function phi = MeanValue2D(v,x)
+%%%% This is an implementation of the code provided in 
+% Floater, M. (2015) paper: 
+% Generalized barycentric coordinates and applications. 
+% Acta Numerica, 24, 161-214. doi:10.1017/S0962492914000129
 n = size(v,1);
 w = zeros(n,1);
 r = zeros(n,1);
