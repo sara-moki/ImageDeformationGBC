@@ -1,4 +1,8 @@
 function phi = Wach2D(v,x)
+%%%% This is an implementation of the code provided in 
+% Floater, M. (2015) paper: 
+% Generalized barycentric coordinates and applications. 
+% Acta Numerica, 24, 161-214. doi:10.1017/S0962492914000129
 n = size(v,1);
 w = zeros(n,1);
 A=zeros(n,1);
@@ -21,4 +25,3 @@ function Area = AreaTri(v,x,i,n)
  Area = 0.5*det([ones(1,3);x(1,1),v(ii,1),v(i,1);...
                     x(1,2),v(ii,2),v(i,2)]);
 end 
-
