@@ -1,8 +1,8 @@
 function phi = Wach2D(v,x)
-%%%% This is an implementation of the code provided in 
-% Floater, M. (2015) paper: 
-% Generalized barycentric coordinates and applications. 
-% Acta Numerica, 24, 161-214. doi:10.1017/S0962492914000129
+%%This is an implementation of the code provided in
+% Floater, Michael & Gillette, Andrew & Sukumar, N. (2013) paper:
+% Gradient Bounds for Wachspress Coordinates on Polytopes.
+% SIAM Journal on Numerical Analysis. 52. 10.1137/130925712. 
 n = size(v,1);
 w = zeros(n,1);
 A=zeros(n,1);
