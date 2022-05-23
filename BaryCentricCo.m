@@ -143,7 +143,7 @@ set(handles.Image,'value',1);
 resol_row = str2double(get(handles.xfine,'string'));
 resol_column = str2double(get(handles.yfine,'string'));
 filename=uigetfile('*.*');
-Im = imresize(imread(filename),[resol_row,resol_column]);
+Im = flipud(imresize(imread(filename),[resol_row,resol_column]));
 [xfine,yfine] = meshgrid(1:1:resol_row,1:1:resol_column);
 Z = zeros(size(Im,2),size(Im,1));
 ud.hpatch = surf(xfine,yfine,Z,Im, 'FaceColor', 'texturemap','EdgeColor', 'none');
